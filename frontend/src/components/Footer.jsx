@@ -1,5 +1,6 @@
 import React from "react"
 import "./Footer.css"
+import { Link } from "react-router-dom";
 function Footer() {
 
   const specific = {
@@ -22,11 +23,11 @@ function Footer() {
         <div className="footer-section">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/KnowledgeCenter/tools">Financial Tools</a></li>
-            <li><a href="/KnowledgeCenter">Knowledge Center</a></li>
-            <li><a href="/contact">Contact Us</a></li>
-            <li><a href="/about">About Us</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/KnowledgeCenter/tools">Financial Tools</Link></li>
+            <li><Link to="/KnowledgeCenter">Knowledge Center</Link></li>
+            <li><Link to="/contact">Contact Us</Link></li>
+            <li><Link to="/about">About Us</Link></li>
           </ul>
         </div>
 
@@ -34,9 +35,9 @@ function Footer() {
         <div className="footer-section">
           <h4>Client Services</h4>
           <ul>
-            <li><a href="https://prudentinvestment.investwell.app/app/#/login" target="_blank" rel="noopener noreferrer">Client Login</a></li>
-            <li><a href="/downloads">Downloads</a></li>
-            <li><a href="/faq">FAQ</a></li>
+            <li><a href="https://prudentinvestment.investwell.app/app/#/login" target="_blank">Client Login</a></li>
+            <li><Link to="/downloads">Downloads</Link></li>
+            <li><Link to="/faq">FAQ</Link></li>
           </ul>
         </div>
       </div>
