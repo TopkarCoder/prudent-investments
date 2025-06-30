@@ -1,0 +1,35 @@
+.downloads-page {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.downloads-page h1 {
+  font-size: 2rem;
+  color: #0c2d57;
+  margin-bottom: 1rem;
+}
+
+.downloads-page p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.downloads-list {
+  list-style-type: circle;
+  padding-left: 0;
+}
+
+.downloads-list li {
+  margin: 2rem 0;
+}
+
+.downloads-list a {
+  color: #0c2d57;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 1px solid transparent;
+}
+
+.downloads-list a:hover {
+  border-bottom: 1px solid #ffcc00;
+}

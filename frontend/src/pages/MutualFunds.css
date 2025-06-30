@@ -1,0 +1,131 @@
+/* Container for the whole page */
+.mf-container {
+  padding: 2rem;
+  max-width: 1100px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* Main title */
+.mf-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: #0d47a1;
+}
+
+/* Each section wrapper */
+.mf-section {
+  margin-bottom: 3rem;
+}
+
+/* Section titles */
+.mf-section h2 {
+  color: #003366;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.mf-section h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #0d47a1;
+  margin-top: 8px;
+}
+
+.mf-section p {
+    font-size: 1.25rem;
+    color: #555;
+    margin-top: 0.5rem;
+}
+
+.mf-image {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.mf-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.mf-checklist {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.mf-checklist li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0.8rem 0;
+  font-size: 1.15rem ;
+  color: #444 ;
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.mf-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.mf-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  padding: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mf-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.mf-card h3 {
+  color: #0d47a1;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.mf-card p {
+  font-size: 0.98rem;
+  color: #555;
+}
+
+.sip-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.sip-section p {
+  font-size: 1.15rem !important;
+  color: #444 !important;
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif !important;
+  line-height: 1.7;
+  margin-bottom: 0.8rem;
+}
+
+.video-wrapper iframe {
+  border: none;
+  flex: 1 1 300px;
+  margin: 15px;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}

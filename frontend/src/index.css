@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Naserra';
+  src: url('./assets/fonts/Naserra.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'Naserra', serif;
+  background-color: #f7f7f7;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar {
+  background-color: #004080;
+  padding: 1rem;
+  color: white;
+}
+
+.navbar a {
+  margin: 0 1rem;
+  color: white;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #004080;
+  color: white;
+  margin-top: 2rem;
+}
+
