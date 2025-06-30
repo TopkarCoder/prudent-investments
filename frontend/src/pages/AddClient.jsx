@@ -56,7 +56,7 @@ function AddClient() {
     };
 
     try {
-      const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/admin/add-client`, clientData, {
+      const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/admin/add-client`, clientData, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('adminToken')}`
         }

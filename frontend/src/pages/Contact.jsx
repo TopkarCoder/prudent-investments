@@ -18,7 +18,7 @@ function Contact() {
     setStatus('Sending...');
 
     try {
-      const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/send-message`, {
+      const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/send-message`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
