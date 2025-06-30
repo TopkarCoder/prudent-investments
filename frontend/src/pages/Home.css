@@ -1,6 +1,6 @@
 
 .home-container {
-  background-image: url('/src/assets/bridge1.jpeg'); /* Adjust path as needed */
+  background-image: url('/src/assets/bridge1.png'); /* Adjust path as needed */
   background-size: cover;
   background-position: center;
   min-height: 100vh;
