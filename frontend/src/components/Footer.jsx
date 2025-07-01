@@ -25,7 +25,7 @@ function Footer() {
           <ul>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/KnowledgeCenter/tools">Financial Tools</Link></li>
-            <li><Link to="/KnowledgeCenter">Knowledge Center</Link></li>
+            <li><Link to="/KnowledgeCenter/investor-education">Knowledge Center</Link></li>
             <li><Link to="/contact">Contact Us</Link></li>
             <li><Link to="/about">About Us</Link></li>
           </ul>

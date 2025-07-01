@@ -11,7 +11,7 @@ function AdminLogin() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/admin/login`, {
+      const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/admin/login`, {
         email,
         password,
       });

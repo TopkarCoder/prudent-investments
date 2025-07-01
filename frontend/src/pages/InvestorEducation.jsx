@@ -7,7 +7,7 @@ export default function InvestorEducation() {
   const [resources, setResources] = useState([]);
 
   useEffect(() => {
-    axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/resources`)
+    axios.get(`${import.meta.env.VITE_BACKEND_URL}/resources`)
       .then(res => setResources(res.data))
       .catch(() => alert('Error fetching resources'));
   }, []);

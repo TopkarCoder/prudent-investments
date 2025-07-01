@@ -23,7 +23,7 @@ function Navbar() {
         <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
         <li><Link to="/about" onClick={toggleMenu}>About Us</Link></li>
         <li className="dropdown">
-          <Link to="/products/mutual-funds" onClick={toggleMenu}>Products</Link>
+          <Link to="/products/mutual-funds" onClick={toggleMenu}>Services</Link>
           <ul className="dropdown-menu">
             <li><Link to="/products/mutual-funds" onClick={toggleMenu}>Mutual Funds</Link></li>
             <li><Link to="/products/fdsandbonds" onClick={toggleMenu}>FDs/Bonds</Link></li>

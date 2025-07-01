@@ -10,7 +10,7 @@ function AdminDashboard() {
 
   const handleSearch = async () => {
     try {
-      const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/admin/search-clients`, {
+      const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/admin/search-clients`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('adminToken')}`,
         },
@@ -31,7 +31,7 @@ function AdminDashboard() {
 
     const updateDate = async (id, newDate, idx) => {
       try {
-        await axios.patch(`${import.meta.env.VITE_BACKEND_URL}/api/admin/client-date/${id}`, {
+        await axios.patch(`${import.meta.env.VITE_BACKEND_URL}/admin/client-date/${id}`, {
           dateUpdated: newDate,
         }, {
           headers: {
