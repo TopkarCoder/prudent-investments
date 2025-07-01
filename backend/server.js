@@ -13,18 +13,15 @@ const PORT = process.env.PORT || 5000;
 
 const allowedOrigins = [
   'https://prudent-investments.vercel.app', //Actual Frontend URL
-  'http://localhost:5173'             //local development
+  'http://localhost:5173',             //local development
+  'https://www.prudentinv.com', // Production URL
+  'http://localhost:3000', // Local development for React app
 ];
 
 app.use(cors({
-  origin: function (origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
-  //credentials: true // Only enable if you use cookies or HTTP-only tokens
+  origin: allowedOrigins,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
 }));
 
 

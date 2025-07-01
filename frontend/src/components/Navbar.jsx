@@ -23,7 +23,7 @@ function Navbar() {
         <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
         <li><Link to="/about" onClick={toggleMenu}>About Us</Link></li>
         <li className="dropdown">
-          <Link to="/products" onClick={toggleMenu}>Products</Link>
+          <Link to="/products/mutual-funds" onClick={toggleMenu}>Products</Link>
           <ul className="dropdown-menu">
             <li><Link to="/products/mutual-funds" onClick={toggleMenu}>Mutual Funds</Link></li>
             <li><Link to="/products/fdsandbonds" onClick={toggleMenu}>FDs/Bonds</Link></li>
@@ -33,7 +33,7 @@ function Navbar() {
         
 
         <li className='dropdown'>
-          <Link to="/login" className="dropdown-title" onClick={toggleMenu}>Login</Link>
+          <Link to="https://prudentinvestment.investwell.app/app/#/login" target='blank' className="dropdown-title" onClick={toggleMenu}>Login</Link>
             <ul className="dropdown-menu">
               <li><Link to="https://prudentinvestment.investwell.app/app/#/login" target='blank' onClick={toggleMenu}>Client Login</Link></li>
               <li><Link to="/admin-login" target='blank' onClick={toggleMenu}>Admin Login</Link></li>
@@ -41,7 +41,7 @@ function Navbar() {
         </li>
 
         <li className="dropdown"> 
-          <Link to="/KnowledgeCenter" className="dropdown-title" onClick={toggleMenu}>Knowledge Center</Link>
+          <Link to="/KnowledgeCenter/investor-education" className="dropdown-title" onClick={toggleMenu}>Knowledge Center</Link>
             <ul className="dropdown-menu">
               <li><Link to="/KnowledgeCenter/investor-education" onClick={toggleMenu}>Investor Education</Link></li>
               <li><Link to="/KnowledgeCenter/tools" onClick={toggleMenu}>Tools</Link></li>

@@ -12,7 +12,7 @@ router.post('/send-message', async (req, res) => {
 
     try {
         await resend.emails.send({
-            from: 'Prudent Contact <onboarding@resend.dev>',
+            from: 'support@prudentinv.com',
             to: 'myprudent2025@gmail.com',
             subject: `New message from ${name}`,
             html: `
